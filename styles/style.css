@@ -8,10 +8,16 @@ body{
 
 }
 
+p{
+    font-size: 15px;
+}
+
+
+
 .wrapper{
     position: relative;
     background: linear-gradient(110.72deg, #081323 0%, #12033E 31.77%, #27146F 60.42%, #3E1573 78.13%, #3D0F6A 100%);
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -49,5 +55,83 @@ body{
 }
 .navbar-menu li:first-child{
     margin-left: 0px;
+}
+
+.areas-box{
+    margin-top: 34px;
+}
+
+.areas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+
+
+.area{
+    padding: 19px 23px;
+    width: 240px;
+    background-color: #3C3C3C;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.area h3{
+    font-size: 24px;
+    color: #A0EEFF;
+
+}
+
+.area:first-child{
+    margin: 0;
+}
+
+.area-image{
+    border-radius: 12px;
+    width: 198px;
+    height: 100px;
+    background-image: url(../images/kizlorda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.overlay{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(185, 185, 185, 0.59) 0.01%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.view-on-map{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.view-on-map span{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.go-to-landscapes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 30%;
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+
+.go-to-landscapes svg{
+    width: 30px;
 }
 
