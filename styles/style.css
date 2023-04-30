@@ -146,7 +146,7 @@ footer{
     width: 100%;
     height: 247px;
     background-color: #202020;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 footer .container{
@@ -219,5 +219,47 @@ h4{
 .disc-picture{
     max-width: 35px;
     max-height: 35px;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: #3B3B3B;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 41px 21px;
+    margin-top: 100px;
+    align-items: center;
+    
+}
+
+.info-txt{
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    
+}
+
+.info-btn{
+    display: flex;
+    background-color: #DADADA;
+    max-width: 320px;
+    border: none;
+    border-radius: 8px;
+    max-width: 316px;
+    margin-top: 21px;
+    cursor: pointer;
+    padding: 0px 57px;
+}
+
+.go-to-main{
+    color: #000;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.info-btn:hover{
+    background-color: #bdbdbd;
 }
 
