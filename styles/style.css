@@ -267,4 +267,45 @@ h4{
 #map {
     height: 400px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
-  }
+}
+
+.container-landscapes { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+ 
+.card { 
+    width: 721px; 
+    height: 691px; 
+    border-radius: 8px; 
+    background-color: #3B3B3B; 
+    margin-top: 60px; 
+    margin-bottom: 24px; 
+    padding: 27px 44px; 
+} 
+ 
+.card img { 
+    max-height: 300px; 
+    width: 100%; 
+    border-radius: 8px; 
+    background-size: cover; 
+}  
+ 
+.ld-title { 
+    margin-top: 22px; 
+    font-weight: 700; 
+    font-size: 32px; 
+    line-height: 36px; 
+    letter-spacing: -0.055em; 
+    color: #A0EEFF; 
+} 
+ 
+.ld-text { 
+    font-weight: 600; 
+    font-size: 22px; 
+    line-height: 36px; 
+    letter-spacing: -0.005em; 
+    color: #FFFFFF; 
+    margin-top: 13px; 
+}
