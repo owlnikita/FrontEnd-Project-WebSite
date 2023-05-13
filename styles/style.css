@@ -95,59 +95,39 @@ p{
 }
 
 
+
+
 .area-image{
-    border-radius: 12px;
-    width: 198px;
-    height: 100px;
-    background-image: url(../images/kizlorda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     margin-top: 10px;
+    
 }
 
-.overlay{
+.area-image img{
+    display: block;
     border-radius: 12px;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.area-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(185, 185, 185, 0.59) 0.01%, rgba(0, 0, 0, 0.75) 100%);
-}
-
-.view-on-map{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.view-on-map span{
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 0.065em;
-    color: #FFFFFF;
-    margin-left: 11px;
-}
-
-.go-to-landscapes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 30%;
-    background-color: #ffffff;
-    cursor: pointer;
-
-}
-
-.go-to-landscapes svg{
-    width: 30px;
 }
 
 footer{
     width: 100%;
     height: 247px;
     background-color: #202020;
-    margin-top: 80px;
 }
 
 footer .container{
@@ -271,8 +251,8 @@ h4{
 } 
  
 .card { 
-    width: 721px; 
-    height: 691px; 
+    max-width: 750px; 
+    max-height: 780px; 
     border-radius: 8px; 
     background-color: #3B3B3B; 
     margin-top: 60px; 
@@ -303,4 +283,8 @@ h4{
     letter-spacing: -0.005em; 
     color: #FFFFFF; 
     margin-top: 13px; 
+}
+
+.footer-n-map{
+    margin-top: 150px;
 }
