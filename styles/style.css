@@ -5,6 +5,8 @@ body{
     font-weight: 600;
     font-size: 64px;
     color: #fff;
+    height: auto;
+    width: auto;
 
 }
 
@@ -17,7 +19,10 @@ p{
 .wrapper{
     position: relative;
     background: linear-gradient(110.72deg, #081323 0%, #12033E 31.77%, #27146F 60.42%, #3E1573 78.13%, #3D0F6A 100%);
-    height: 100%;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -59,6 +64,7 @@ p{
 
 .areas-box{
     margin-top: 34px;
+    flex-grow: 1;
 }
 
 .areas{
@@ -127,7 +133,6 @@ p{
 
 footer{
     width: 100%;
-    height: 247px;
     background-color: #202020;
 }
 
@@ -298,7 +303,7 @@ h4{
     width: 100%;
     background: linear-gradient(180deg, rgb(8, 2, 37) 0%, rgba(9,1,18,0.9850315126050421) 58%, rgba(0,0,0,1) 100%);
     z-index: 2;
-    transition: 1s all;
+    transition: 0.8s all;
     opacity: 1;
     visibility: visible;
 
@@ -319,7 +324,7 @@ h4{
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    animation: 1s spin infinite linear;
+    animation: 0.8s spin infinite linear;
 }
 
 @keyframes spin{
@@ -328,5 +333,19 @@ h4{
     }
     to{
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (max-width: 1120px){
+
+    .logo-name{
+        font-size: 0.5em;
+    }
+    
+    .navbar-menu li{
+        margin-left: 40px;
+    }
+    .navbar-menu li:first-child{
+        margin-left: 0px;
     }
 }
