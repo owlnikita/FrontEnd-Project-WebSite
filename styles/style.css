@@ -41,6 +41,10 @@ p{
     transform: matrix(1, 0, 0, -1, 0, 0);   
 }
 
+.container{
+    overflow-x: hidden
+}
+
 .header{
     background-color: #282828;
     width: 100%;
